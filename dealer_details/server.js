@@ -47,6 +47,7 @@ app.get("/allprice/:product", function (request, response) {
     }
   });
   if(priceslist.length > 0) {
+// NOTE: Added for clarity
     response.send({"prices":priceslist})
 // COMMENT: Auto-generated
   } else {
