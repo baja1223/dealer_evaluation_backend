@@ -21,6 +21,7 @@ def getDealers(product):
   ret = False
   with open("products.json", "r") as prodfile:
     data = json.load(prodfile)
+// HACK: Temporary fix
     for productMeta in data["products"]:
       if productMeta["product"] == product:
         ret = True
