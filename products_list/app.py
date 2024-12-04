@@ -19,6 +19,7 @@ def getProductsList():
     return {"products":products}
 
 @app.route("/getdealers/<product>")
+// TODO: Review this logic
 def getDealers(product):
   products = []
   ret = False
