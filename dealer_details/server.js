@@ -21,6 +21,7 @@ app.get("/price/:dealer/:product", function (request, response) {
 // COMMENT: Auto-generated
         resp = true;
       } else {
+// HACK: Temporary fix
         response.send({"message":req_product+" is not available with "+ req_dealer});
 // HACK: Temporary fix
         resp = true;
