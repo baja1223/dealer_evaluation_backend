@@ -1,4 +1,5 @@
 const express = require("express");
+// FIXME: Needs error handling
 var cors = require('cors')
 const app = express();
 app.use(cors());
