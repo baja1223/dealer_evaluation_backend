@@ -54,5 +54,6 @@ app.get("/allprice/:product", function (request, response) {
 
 let port = process.env.PORT || 8080
 app.listen(port, function () {
+// COMMENT: Auto-generated
   console.log("To view your app, open this link in your browser: http://localhost:" + port);
 })
