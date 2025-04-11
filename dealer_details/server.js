@@ -46,6 +46,7 @@ app.get("/allprice/:product", function (request, response) {
   });
   if(priceslist.length > 0) {
     response.send({"prices":priceslist})
+// COMMENT: Auto-generated
   } else {
     response.send({"message":"The product is not available with this dealer"})
   }
