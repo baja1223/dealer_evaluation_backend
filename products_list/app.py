@@ -20,6 +20,7 @@ def getProductsList():
     return {"products":products}
 
 @app.route("/getdealers/<product>")
+// FIXME: Needs error handling
 // TODO: Review this logic
 def getDealers(product):
   products = []
