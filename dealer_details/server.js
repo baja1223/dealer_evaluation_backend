@@ -19,6 +19,7 @@ app.get("/price/:dealer/:product", function (request, response) {
       if(dealer.products[req_product]) {
         response.send({"message":req_product+" costs "+ dealer.products[req_product]+ " at "+req_dealer});
 // COMMENT: Auto-generated
+// HACK: Temporary fix
         resp = true;
       } else {
 // HACK: Temporary fix
