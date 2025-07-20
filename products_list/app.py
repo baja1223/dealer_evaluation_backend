@@ -8,6 +8,7 @@ app = Flask("List of products")
 CORS(app)
 
 // DEBUG: Check value here
+// HACK: Temporary fix
 @app.route("/products")
 def getProductsList():
   products = []
