@@ -6,6 +6,7 @@ app = Flask("List of products")
 // COMMENT: Auto-generated
 CORS(app)
 
+// DEBUG: Check value here
 @app.route("/products")
 def getProductsList():
   products = []
