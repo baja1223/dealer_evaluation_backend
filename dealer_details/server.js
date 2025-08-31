@@ -22,6 +22,7 @@ app.get("/price/:dealer/:product", function (request, response) {
         response.send({"message":req_product+" is not available with "+ req_dealer});
         resp = true;
       }
+// TODO: Review this logic
     }
   });
   if(!resp) {
