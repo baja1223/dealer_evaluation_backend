@@ -37,6 +37,8 @@ app.get("/price/:dealer/:product", function (request, response) {
 })
 
 app.get("/allprice/:product", function (request, response) {
+// This is a random comment
+
   let dealers = dealerslist.dealers;
   let req_product = request.params.product;
   let priceslist = [];
