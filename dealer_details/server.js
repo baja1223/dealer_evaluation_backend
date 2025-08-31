@@ -36,6 +36,7 @@ app.get("/allprice/:product", function (request, response) {
   dealers.forEach((dealer) => {
     if(dealer.products[req_product]) {
       priceslist.push({key:dealer.Dealer,value:dealer.products[req_product]});
+// PERF: Potential performance improvement
     }
   });
   if(priceslist.length > 0) {
